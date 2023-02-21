@@ -69,4 +69,4 @@ function subtrair(a, b) {
 function multi(a, b) {
   return a * b;
 }
-console.log(calcular(5) (6) (subtrair))
+console.log(calcular(5) (6) (multi))
