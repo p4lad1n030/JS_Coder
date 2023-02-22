@@ -44,7 +44,7 @@ console.log(somar(5)(4)(8));
 function desafio(n1) {
   return function (n2) {
     return function (fn) {
-      if (fn == "-") {
+      if (fn == `-`) {
         return n1 - n2;
       } else if (fn == "+") {
         return n1 + n2;
