@@ -12,7 +12,7 @@ const res = carrinho.filter(qtdMaiorQzero).map(getNome);
 console.log(res);
 
 // solução gerada por mim antes do professor fazer
-// a minha solução não retorna um array como a do pr
+// a minha solução não retorna um array como a do professor e sim itens "soltos"
 const maiorQZ = (item) => {
   if (item.qtd > 0) {
     let res = item.nome;
@@ -20,3 +20,6 @@ const maiorQZ = (item) => {
   }
 };
 carrinho.filter(maiorQZ);
+
+
+
