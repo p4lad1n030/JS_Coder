@@ -7,7 +7,7 @@ const carrinho = [
 ];
 
 const getNome = (item) => item.nome;
-const qtdMaiorQzero = (item) => item.qtd > 0;
+const qtdMaiorQzero = (item) => item.qtd > 4;
 const res = carrinho.filter(qtdMaiorQzero).map(getNome);
 console.log(res);
 
@@ -22,6 +22,20 @@ const maiorQZ = (item) => {
 carrinho.filter(maiorQZ);
 
 /*SOLUÇÃO GERADA PELO PROFESSOR */
+console.log('resposta do professor inicio')
+Array.prototype.meuFilter = function (fn) {  
+  const novoArray = []
+  for (let i = 0; i < this.length; i++) {
+    if(fn(this[i], i, this)){
+      novoArray.push(this[i])
+    };
+  }
+  return novoArray
+}
+const res2 = carrinho.meuFilter(qtdMaiorQzero).map(getNome);
+console.log(res2);
+console.log('resposta do professor fim')
+
 
 /*SOLUÇÃO GERADA POR MIM */
 // criando uma solução pra simular o filter com FOR + IF/ELSE
