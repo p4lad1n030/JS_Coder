@@ -21,18 +21,16 @@ const maiorQZ = (item) => {
 };
 carrinho.filter(maiorQZ);
 
+/*SOLUÇÃO GERADA PELO PROFESSOR */
 
-
+/*SOLUÇÃO GERADA POR MIM */
 // criando uma solução pra simular o filter com FOR + IF/ELSE
 const filtro = val => {
   if (val[i].qtd < 5) {
     console.log(val[i].nome);
   }
 }
-console.log('kakalaaaaa');
+console.log('Akakalaaaaa');
 for (var i = 0; i < carrinho.length; i++) {
   filtro(carrinho)
-  // if (carrinho[i].qtd < 3) {
-  //   console.log(carrinho[i].nome);
-  // }
 }
