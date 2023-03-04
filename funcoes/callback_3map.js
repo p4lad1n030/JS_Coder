@@ -25,16 +25,16 @@ function identifier(z) {
 function res(p) {
   console.log(p.qtd * p.preco);
 }
-// carrinho.map(identifier);
-// carrinho.map(res);
+carrinho.map(identifier);
+carrinho.map(res);
 
-Array.prototype.meuMap = function (fn) {
-  const novoArray = []
-  for(let i = 0; i< this.length; i ++){
-    novoArray.push(fn(this[i], i, this))
+// Array.prototype.meuMap = function (fn) {
+//   const novoArray = []
+//   for(let i = 0; i< this.length; i ++){
+//     novoArray.push(fn(this[i], i, this))
 
-  }
-  return novoArray
-  }
-carrinho.meuMap(identifier)
-carrinho.meuMap(res)
+//   }
+//   return novoArray
+//   }
+// carrinho.meuMap(identifier)
+// carrinho.meuMap(res)

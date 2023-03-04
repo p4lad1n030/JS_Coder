@@ -6,8 +6,24 @@ const carrinho = [
   { nome: "Tesoura", qtd: 1, preco: 19.2 },
 ];
 
-const total = function (val) {
-  console.log(val.qtd * val.preco)
+// const getTotal = (item) => item.qtd * item.preco;
+// const soma = (acc, el) => {
+//   acc + el;
+// };
 
-};
-carrinho.reduce(total, 0);
+// const total = carrinho.map(getTotal).reduce(soma, 0);
+// console.log(total)
+
+const only = (val) => val.qtd >= 4;
+const getTotal = (item) => item.qtd * item.preco;
+const somar = (acc, el) => acc + el;
+
+const totalGeral = carrinho
+  //.filter(only)
+  .map(getTotal)
+  .reduce(somar, 0);
+  
+  console.log(totalGeral);
+  
+  
+  
