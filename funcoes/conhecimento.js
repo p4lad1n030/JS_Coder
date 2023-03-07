@@ -15,8 +15,9 @@ const carrinho = [
 
 // map function
 /*gera um NOVO ARRAY com elementos transformados */
-const n = [1,2,3,4,5]
-const dobro = n1 => n1 * 2
-console.log(n.map(dobro))
+const dobro = n1 => n1.qtd * 2
+console.log(carrinho.map(dobro))
 
 // filter function
+const filtro = arg => arg.preco < 20 && arg.preco > 6
+console.log(carrinho.filter(filtro))
