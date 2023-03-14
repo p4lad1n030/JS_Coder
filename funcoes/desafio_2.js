@@ -30,8 +30,8 @@ const media1 = carrinho
   .reduce(
     (acc, el) => {
       const novaQtd = acc.qtde + 1;
-      const novaTotal = acc.total + el;
-      return { qtde: novaQtd, total: novaTotal, media: novaTotal / novaQtd };
+      const novoTotal = acc.total + el;
+      return { qtde: novaQtd, total: novoTotal, media: novoTotal / novaQtd };
     },
     { qtde: 0, total: 0, media: 0 }
   );
