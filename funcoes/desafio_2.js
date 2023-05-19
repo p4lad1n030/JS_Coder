@@ -40,6 +40,6 @@ console.log(media1);
 // function qq() {
 //   const sum = (acc, el) => (acc + el) / 2;
 //   const i = rellyTrue.map((val) => val.qtd * val.preco);
-//   const j = i.reduce(sum);
+//    const j = i.reduce(sum);
 //   console.log(j);
 // }
