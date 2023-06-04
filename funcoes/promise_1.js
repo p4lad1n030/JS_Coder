@@ -1,5 +1,5 @@
 /*  O resultado do metodo .then() é passado para o próximo .then()
-  isso quer dizer que isso quer dizer que o processamanto de um dado no metodo .then sera o paramentro da função do segundo metodo .then de uma mesma promisse
+  isso quer dizer que o processamanto de um dado no metodo .then sera o paramentro da função do segundo metodo .then de uma mesma promisse
 */
 const primeiroElemento = arrayOuString => arrayOuString[0]
 const letraMinuscula = letra => letra.toLowerCase()
